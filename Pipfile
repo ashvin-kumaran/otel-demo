@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+opentelemetry-distro = "*"
+opentelemetry-exporter-otlp = "*"
+opentelemetry-instrumentation-flask = "*"
+flask = "<3"
+werkzeug = "<3"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.1"
+
+[scripts]
+demo = "python src/demo-app/app.py"
+arithmetic = "python src/arithmetic-app/app.py"
